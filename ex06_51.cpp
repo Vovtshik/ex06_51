@@ -13,6 +13,13 @@ int main()
    
    cout << "Enter two integers: ";
    cin >> x >> y;
+   while(y == 0)
+   {
+       cout << "y cannot have 0, enter a number other than 0 for y:\n";
+       cin >> y;
+   }
+   if(y < 0)
+      y = y * (-1);
    cout << "The result is " << mystery(x, y) <<endl;
 
    return 0;
